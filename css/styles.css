@@ -1,0 +1,97 @@
+* {
+   margin:0;
+   padding:0;
+}
+
+::-webkit-scrollbar {
+  width : 0.1px; 
+  height: 5px;
+  pacity: 0.02;
+} /* УБРАЛ ПОЛОСУ ПРОКРУТКИ С ЭКРАНА и сделал свою. 
+Когда пишу сайт, чтобы на планшете отображалось содержимое от края до края страницы 
+без зазоров, прокрутку можно отключить. И включить для красоты по готовности сайта.*/
+
+::-webkit-scrollbar-button {height: 50px; background :#42e10e; }  /*2 - кнопка*/  
+
+::-webkit-scrollbar-track {background: #274dd7; }  /*3 - трек */ 
+
+::-webkit-scrollbar-track-piece { background: #e91e63;}  /*4 - видимая часть трека */ 
+
+::-webkit-scrollbar-thumb {background: #fbe100; border-radius: 10px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+
+body {
+box-sizing: border-box;
+background-color: #7a7373;
+}
+
+.content_certificate {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+height: 840px;
+margin: 0 auto;
+margin-top: 21px;
+margin-right: 70px;
+margin-left: 70px;
+border-radius: 67px;
+background-color: #8f8f6078;
+box-shadow: 0px 6px 18px -3px black;
+}
+
+.filter-img_1 {
+osition: absolute;
+width: 700px;
+height: 360px;
+margin-top: 38px;
+margin-bottom: 63p;
+background-image: url(images/IMG_1.jpg);
+background-size: cover;
+background-position: center center;
+box-shadow: 7px 9px 6px 2px #34323299;
+}
+
+.filter-img_2 {
+osition: absolute;
+width: 700px;
+height: 360px;
+margin-bottom: 38px;
+background: url(images/IMG_2.jpg) no-repeat;
+background-size: cover;
+background-position: center center;
+box-shadow: 7px 9px 6px 2px #34323299;
+}
+
+.img {
+width: 700px;
+height: 360px;
+}
+
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1024px) {
+.content_certificate { height: 754px; margin-top: 17px; }
+.filter-img_1 {margin-top: 7px; margin-bottom: 17px; }
+.img {  }
+}
+
+@media screen and (max-width: 768px) {
+.content_certificate { height: 768px; border-radius: 37px; }
+.filter-img_1 { width: 582px; margin-top: 14px; margin-bottom: 16px;}
+.filter-img_2 { width: 582px;}
+.img { width: 582px;}
+}
+
+@media screen and (max-width: 425px) {
+.content_certificate { width: 431px; border-radius: 19px; margin-top: 22px; margin-left: 2px;}
+.filter-img_1, .filter-img_2 { width: 406px; }
+.img { width: 406px; }
+}
+
+@media screen and (max-width: 375px) {
+.content_certificate { margin-top: 73px; }
+.filter-img_1 {  }
+.img {  }
+}
